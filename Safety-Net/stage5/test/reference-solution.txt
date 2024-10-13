@@ -1,0 +1,9 @@
+# Step 1: Switch to the feature/case branch
+git checkout -b feature/case origin/feature/case  # Create a new branch from the remote feature/case branch
+
+# Step 2: Restore the case_operations.py file from the appropriate commit
+git checkout 6b2ec72 -- case_operations.py
+
+# Step 3: Commit the changes with the required message
+git add case_operations.py
+git commit -m "refactor: restored case operations"

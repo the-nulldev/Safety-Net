@@ -1,0 +1,8 @@
+# Switch to the main branch:
+git checkout main
+
+# Merge the feature/math branch into main:
+git merge feature/math
+
+# Delete the feature/math branch locally:
+git branch -d feature/math or git branch -D feature/math to force delete

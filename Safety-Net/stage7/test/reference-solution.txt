@@ -1,0 +1,10 @@
+# Step 1: Create a new 0.2.x release branch from the 0.2.x-dev branch
+git checkout 0.2.x-dev
+git checkout -b 0.2.x 0.2.x-dev
+
+# Step 2: Fix the make_upper function in case_operations.py
+# (Manually edit the file to return the text instead of printing it)
+
+# Step 3: Commit the changes with the required message
+git add case_operations.py
+git commit -m "fix: bug-fix make_upper"

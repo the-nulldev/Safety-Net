@@ -1,0 +1,29 @@
+<h2>Description</h2>
+
+<p>In collaborative software development, completing a feature is only part of the process. Once the feature is ready, it must be integrated into the main development branch to ensure that all team members can access the updated code. Merging feature branches into the development branch is a common practice that helps maintain a clean, organized repository while ensuring that the latest features are available for further testing and development.</p>
+
+<p>In this stage, you will finalize your work on the&nbsp;<code>feature/case</code>&nbsp;branch by merging it into the&nbsp;<code>0.2.x-dev</code>&nbsp;development branch. After merging, the&nbsp;<code>feature/case</code>&nbsp;branch will no longer be needed, so you will delete it to keep the repository clean. Finally, you will verify that the merge was successful and that the repository is in the correct state.</p>
+
+<p>This process mirrors real-world software development, where teams frequently merge feature branches into development branches to integrate new code while maintaining a clean, streamlined repository.</p>
+
+<h2>Objectives</h2>
+
+<p>To complete this stage, you need to follow these steps:</p>
+
+<ul>
+  <li>
+    <p>Rebase&nbsp;<code>feature/case</code>&nbsp;branch with&nbsp;<code>0.2.x-dev</code>: before merging, rebase the&nbsp;<code>feature/case</code>&nbsp;branch with the&nbsp;<code>0.2.x-dev</code>&nbsp;branch to ensure that it includes the latest changes from the development branch. This is necessary to avoid conflicts and ensure that the feature branch is up to date.</p>
+  </li>
+  <li>
+    <p>Switch to the&nbsp;<code>0.2.x-dev</code>&nbsp;branch: after rebasing, switch to the&nbsp;<code>0.2.x-dev</code>&nbsp;branch. This is the development branch where the latest features are integrated.</p>
+  </li>
+  <li>
+    <p>Merge the&nbsp;<code>feature/case</code>&nbsp;branch into&nbsp;<code>0.2.x-dev</code>: perform the merge operation to integrate the changes from the&nbsp;<code>feature/case</code>&nbsp;branch into the&nbsp;<code>0.2.x-dev</code>&nbsp;branch. This will bring the new feature into the development branch without creating a separate merge commit.</p>
+  </li>
+  <li>
+    <p>Delete the&nbsp;<code>feature/case</code>&nbsp;branch: once the merge is complete, delete the&nbsp;<code>feature/case</code>&nbsp;branch. This helps keep the repository clean by removing branches that are no longer needed.</p>
+  </li>
+  <li>
+    <p>Verify the repository state: ensure that the&nbsp;<code>0.2.x-dev</code>&nbsp;branch now contains the commits from the&nbsp;<code>feature/case</code>&nbsp;branch and that the&nbsp;<code>feature/case</code>&nbsp;branch has been successfully deleted.</p>
+  </li>
+</ul>

@@ -1,0 +1,41 @@
+<h2>Description</h2>
+
+<p>Typically, features are merged into development branches rather than directly into the main branch.&nbsp;This branch is reserved&nbsp;for production-ready code. Since <code>feature/math</code> was designated a feature branch, we should have merged it into the&nbsp;<code>0.2.x-dev</code>&nbsp;development branch instead of the <code>main</code> branch.</p>
+
+<p>In this stage, you will correct this mistake.&nbsp; You will use Git&#39;s <code>cherry-pick</code> command to transfer the necessary commit from <code>main</code> to <code>0.2.x-dev</code> and then reset the <code>main</code> branch to its original state, ensuring that only the initial commit remains.&nbsp;This is a common task in real-world projects when managing multiple branches.&nbsp;</p>
+
+<p>[ALERT-warning]When you reset the main branch, only the&nbsp;<code>feat: Initial</code>&nbsp;commit should remain.[/ALERT]</p>
+
+<h2>Objectives</h2>
+
+<p>Let&#39;s break this task into a few steps:</p>
+
+<ul>
+  <li>Switch to the <code>0.2.x-dev</code>&nbsp;branch: this is your development branch, where new features should be integrated. Ensure that you are working from this branch before proceeding;</li>
+  <li>Cherry-pick the last commit from the <code>main</code>&nbsp;branch:&nbsp; use the appropriate command to transfer the most recent commit from <code>main</code>&nbsp;to <code>0.2.x-dev</code>. This will allow the feature to be correctly integrated into the development branch.</li>
+  <li>After cherry-picking the commit, return to the <code>main</code>&nbsp;branch to prepare for the reset;</li>
+  <li>Reset the <code>main</code>&nbsp;branch to its original state:&nbsp; reset the <code>main</code>&nbsp;branch to the state it was in before the last merge, leaving only the initial commit (<code>feat: Initial</code>).</li>
+</ul>
+
+<h2>Examples</h2>
+
+<p>Example 1: Resetting the <code>main</code> branch to its original state:&nbsp;&nbsp;</p>
+
+<pre>
+<code class="language-bash">$ git &lt;command&gt;
+HEAD is now at abc123 feat: Initial</code></pre>
+
+<p>Example 2: Verifying the commit history in the <code>main</code> branch:</p>
+
+<pre>
+<code class="language-bash">$ git log --oneline
+abc123 feat: Initial</code></pre>
+
+<p>Example 3: Verifying the commit history in the <code>0.2.x-dev</code> branch:</p>
+
+<pre>
+<code class="language-bash">$ git log --oneline
+1f2d3e4 feat: new function addition
+4g5h6i7 feat: new function get_letters
+7j8k9l0 feat: new function get numbers
+abc123 feat: Initial</code></pre>

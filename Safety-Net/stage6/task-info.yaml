@@ -1,0 +1,10 @@
+type: edu
+files:
+  - name: src/safetynet/Main.java
+    visible: true
+  - name: test/SafetyNetStage6Test.java
+    visible: false
+    propagatable: false
+  - name: test/reference-solution.txt
+    visible: false
+    propagatable: false

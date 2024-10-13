@@ -1,0 +1,37 @@
+<h2>Description</h2>
+
+<p>Congratulations on successfully developing your feature in the <code>feature/math</code> branch! Since your new feature has passed all tests and reviews, it is time to show the world what you've been working on. In this stage, you will integrate your new feature into the main codebase. </p>
+
+<p>Because the <code>main</code> branch has not been modified since you branched off, the merge will be a <strong>fast-forward</strong> merge. This type of merge simply moves the branch pointer forward to include the new commits, without creating a merge commit. Once the merge is complete, you&rsquo;ll clean up by deleting the <code>feature/math</code> branch, as it is no longer needed.</p>
+
+
+<h2>Objectives</h2>
+
+<p>Let&#39;s break this task into a few steps:</p>
+
+<ul>
+  <li>Switch to the <code>main</code> branch.&nbsp;This is the branch where the production-ready version of the project is stored;</li>
+  <li>Merge <code>feature/math</code>&nbsp;to the <code>main.</code>&nbsp;This will integrate the new file containing the new feature into the main codebase;</li>
+  <li>Delete the <code>feature/math</code>&nbsp;branch&nbsp;as it is no longer needed. This helps keep the repository clean and avoids clutter from unused branches. </li>
+</ul>
+
+<h2>Examples</h2>
+
+<p>Example 1: Merging the <code>feature/math</code> branch into the <code>main</code> branch:</p>
+
+<pre>
+<code class="language-bash">$ git &lt;command&gt;
+Updating d2d1138..ffd209d
+Fast-forward
+ main.py            | 24 ++++++++++++++++++++++++
+ math_operations.py |  2 ++
+ 2 files changed, 26 insertions(+)
+ create mode 100644 math_operations.py
+</code></pre>
+
+<p>Example 2: Verifying the branch deletion.</p>
+
+<pre>
+<code class="language-bash">$ git branch
+  0.2.x-dev
+* main</code></pre>

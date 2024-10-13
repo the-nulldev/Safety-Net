@@ -1,0 +1,33 @@
+<h2>Description</h2>
+
+<p>Creating a release branch is an essential step in preparing your project for production. It allows you to freeze the current state of your development branch and focus on final testing and bug fixing before deploying the code to production. This ensures that the code is stable, thoroughly tested, and ready for release.</p>
+
+<p>In this stage, you will create a release branch from the development branch (<code>0.2.x-dev</code>) and perform final testing. During testing, you discover and fix a bug in the&nbsp;<code>make_upper</code>&nbsp;function, which incorrectly prints the output instead of returning it. After fixing the bug, you will commit the changes, ensuring that your project is now ready for production deployment.</p>
+
+<p>This process reflects real-world scenarios where developers create release branches to isolate production-ready code and address any last-minute issues before going live.</p>
+
+<h2>Objectives</h2>
+
+<p>To complete this stage, you need to follow these steps:</p>
+
+<ul>
+    <li>
+        <p>Create a release branch (<code>0.2.x</code>): create a new branch named&nbsp;<code>0.2.x</code>&nbsp;from the&nbsp;<code>0.2.x-dev</code>&nbsp;branch. This branch will serve as the release branch, containing the final version of the code that will be deployed to production;</p>
+    </li>
+    <li>
+        <p>Fix the bug in the&nbsp;<code>make_upper</code>&nbsp;function: in the&nbsp;<code>case_operations.py</code>&nbsp;file, the&nbsp;<code>make_upper</code>&nbsp;function currently prints the uppercase version of the text instead of returning it. Modify the function so that it returns the uppercase text, as shown in the provided code snippet:</p>
+
+        <pre>
+<code class="language-python">def make_upper(text):
+    return text.upper()</code></pre>
+    </li>
+    <li>
+        <p>Commit the bug fix: after fixing the bug, commit the changes to the&nbsp;<code>0.2.x</code>&nbsp;branch with the commit message:<br />
+            <code>fix: bug-fix make_upper</code>.</p>
+    </li>
+    <li>
+        <p>Verify the repository: ensure that the&nbsp;<code>0.2.x</code>&nbsp;branch contains the correct number of commits (9 commits in total, including the bug fix), and that the&nbsp;<code>make_upper</code>&nbsp;function has been correctly updated.</p>
+    </li>
+</ul>
+
+<p>Your project is now prepared for production deployment.</p>

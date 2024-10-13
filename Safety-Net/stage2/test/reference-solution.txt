@@ -1,0 +1,19 @@
+# Switch to the 0.2.x-dev branch:
+git checkout 0.2.x-dev
+
+# Create a new branch feature/math:
+git checkout -b feature/math
+
+# Create the math_operations.py file:
+touch math_operations.py or notepad math_operations.py or vim math_operations.py
+
+# Add the addition function to the file:
+def addition(a, b):
+    return a + b
+
+# Stage and commit the changes:
+git add math_operations.py
+git commit -m "feat: new function addition"
+
+# Verify the number of commits:
+git log --oneline

@@ -1,0 +1,9 @@
+# Clone the repository to your local machine:
+git clone https://github.com/hyperskill-content/Safety-net-study-repository.git
+cd Safety-net-study-repository
+
+# Switch to the 0.2.x-dev branch:
+git checkout -b 0.2.x-dev origin/0.2.x-dev
+
+# Check the branches:
+git branch --all

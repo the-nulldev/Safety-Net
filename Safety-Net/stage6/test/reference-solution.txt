@@ -1,0 +1,12 @@
+# Step 1: Rebase feature/case with 0.2.x-dev
+git checkout feature/case
+git rebase 0.2.x-dev
+
+# Step 2: Switch to the 0.2.x-dev branch
+git checkout 0.2.x-dev
+
+# Step 3: Merge feature/case into 0.2.x-dev
+git merge feature/case
+
+# Step 4: Delete the feature/case branch
+git branch -d feature/case

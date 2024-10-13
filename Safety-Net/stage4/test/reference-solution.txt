@@ -1,0 +1,13 @@
+# Step 1: Switch to the development branch
+git checkout 0.2.x-dev
+
+# Step 2: Cherry-pick the latest commit from the main branch
+git log main --oneline   # Find the latest commit hash (e.g., abc1234)
+git cherry-pick abc1234   # Cherry-pick the latest commit
+
+# Step 3: Switch back to the main branch
+git checkout main
+
+# Step 4: Reset the main branch to the state before the previous merge
+git log --oneline         # Find the commit hash of 'feat: Initial' (e.g., d2d1138)
+git reset --hard d2d1138  # Reset main to the 'feat: Initial'
